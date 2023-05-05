@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>club</title>
+</head>
+<body>
+{% for i in players %}
+
+<h2>{{i.id}}.{{i.ism}}</h2>
+<h2>{{i.pozitsiya}}</h2>
+<h2>{{i.millat}}</h2>
+<h2>{{i.tr_narx}}</h2>
+<h2>{{i.tug_yil}}</h2>
+<br>
+{% endfor %}
+</body>
+</html>

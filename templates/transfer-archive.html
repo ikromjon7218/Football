@@ -1,0 +1,41 @@
+{% extends 'header.html' %}
+{% block content %}
+{% load static %}
+      <div class="nav">
+        <h2>– TRANSFERS ARCHIVE –</h2>
+        <table class="content-nav"></table>
+      </div>
+      
+      <div class="content">
+       
+        <div class="stats">
+          {% for i in transfers %}      
+          <div>
+            <a href="./2017-18season.html">{{i.mavsum}}</a>
+            <!-- <a href="/transfers/{{i.mavsum|slice:':2'}}/">Season 20{{i.mavsum}}</a> -->
+          </div>
+       
+          <div>
+            <a href="../latest-transfers.html">Latest-transfers</a>
+          </div>
+        </div>
+      </div> {% endfor %}
+      <div class="footer state-footer"> 
+        <a href="https://www.facebook.com/topfootballtransfers/">
+          <div>
+            <i class="fa-brands fa-facebook-f"></i> &nbsp;
+              <h3>facebook</h3>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/topfootballtransfers/">
+          <div>
+            <i class="fa-brands fa-instagram"></i> &nbsp;
+            <h3>Instagram</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="../js/main.js"></script>
+</html>
+{% endblock %}
